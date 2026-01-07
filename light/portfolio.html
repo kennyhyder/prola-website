@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portfolio - prola.ai</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2b6cee",
+                        "primary-dark": "#1a4fb0",
+                        "background-light": "#ffffff",
+                        "background-dark": "#101622",
+                        "surface-light": "#f8f9fc",
+                        "surface-dark": "#1a2233",
+                        "text-main": "#0d121b",
+                        "text-muted": "#5c667a"
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.75rem",
+                        "xl": "1rem",
+                        "2xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        /* Hide scrollbar for clean horizontal scrolling */
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light font-display antialiased text-text-main pb-24">
+<!-- Top App Bar -->
+<div class="sticky top-0 z-50 bg-background-light/90 backdrop-blur-md border-b border-gray-100">
+<div class="flex items-center justify-between px-4 py-3">
+<div class="flex items-center gap-3">
+<a href="index.html" class="p-2 -ml-2 rounded-full hover:bg-gray-100 transition-colors">
+<span class="material-symbols-outlined text-text-main text-2xl">arrow_back</span>
+</a>
+<div class="flex flex-col">
+<h2 class="text-lg font-bold leading-none tracking-tight">Jim Prola</h2>
+<span class="text-[10px] font-medium text-primary uppercase tracking-wider mt-0.5">AI Production</span>
+</div>
+</div>
+<a href="../index.html" class="text-primary text-sm font-medium hover:underline">Switch Theme</a>
+</div>
+</div>
+<!-- Main Content Wrapper -->
+<main class="flex flex-col w-full max-w-md mx-auto min-h-screen">
+<!-- Headline Section -->
+<div class="px-5 pt-8 pb-4">
+<h1 class="text-4xl font-bold tracking-tight leading-[1.1] mb-2 text-text-main">
+                Crafting the <span class="text-primary">Future</span> of Ads
+            </h1>
+<p class="text-text-muted text-sm font-medium leading-relaxed max-w-[90%]">
+                Award-winning commercials &amp; social content enhanced by next-gen AI technologies.
+            </p>
+</div>
+<!-- Filter Chips (Horizontal Scroll) -->
+<div class="sticky top-[60px] z-40 bg-background-light/95 backdrop-blur-sm py-2">
+<div class="flex gap-2 px-5 overflow-x-auto scrollbar-hide pb-2 items-center">
+<!-- Active Chip -->
+<button class="flex h-9 shrink-0 items-center justify-center rounded-full bg-primary px-5 shadow-lg shadow-primary/25 transition-transform active:scale-95">
+<p class="text-white text-sm font-bold">All Work</p>
+</button>
+<!-- Inactive Chips -->
+<button class="flex h-9 shrink-0 items-center justify-center rounded-full bg-surface-light border border-transparent px-4 transition-colors hover:bg-gray-100 active:scale-95">
+<p class="text-text-main text-sm font-medium">Commercials</p>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center rounded-full bg-surface-light border border-transparent px-4 transition-colors hover:bg-gray-100 active:scale-95">
+<p class="text-text-main text-sm font-medium">Social</p>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center rounded-full bg-surface-light border border-transparent px-4 transition-colors hover:bg-gray-100 active:scale-95">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">auto_awesome</span>
+<p class="text-text-main text-sm font-medium">AI Gen</p>
+</div>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center rounded-full bg-surface-light border border-transparent px-4 transition-colors hover:bg-gray-100 active:scale-95">
+<p class="text-text-main text-sm font-medium">Shorts</p>
+</button>
+</div>
+</div>
+<!-- Masonry Grid Layout -->
+<div class="p-4 grid grid-cols-2 gap-3 pb-24">
+<!-- Item 1: Large Featured (Spans 2 cols) -->
+<div class="col-span-2 group relative rounded-xl overflow-hidden aspect-video shadow-sm hover:shadow-md transition-shadow">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCiwGooQS5SCDcz2kyhUVWw1KmZIRGVjM-AS_DHvdkouAvJ9s41HBvDVIilyngk3NFOB2cWnMnf0lhcmh8OTHjq50kgE4otV-5Oa-xXUFDA4ayWC-qmj-UwwXg-bibo86ZhldBrhwwLldziDe7myWFuWmxEhSaTS7eXIq933YugkUQGGXHUrmj_siT35upwyBDq5sIJ_VqAWafWDeRB0gG1L7Hta5_Fq_T1AwKumZbb_sPuOTH_cJ8876zxHACT9BIgde2FuCP4Ceg");'>
+</div>
+<!-- Gradient Overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<!-- Content -->
+<div class="absolute inset-0 p-4 flex flex-col justify-between">
+<div class="self-end">
+<span class="bg-black/60 backdrop-blur-md text-white text-[10px] font-bold px-2 py-1 rounded-md">0:45</span>
+</div>
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="bg-primary/90 text-white text-[10px] font-bold px-1.5 py-0.5 rounded">TVC</span>
+</div>
+<h3 class="text-white text-xl font-bold leading-tight">Nike: Air Max Launch</h3>
+<p class="text-gray-200 text-xs font-medium mt-1">High-energy product reveal</p>
+</div>
+</div>
+<!-- Play Button Overlay -->
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+<div class="bg-white/20 backdrop-blur-sm rounded-full p-3 border border-white/50">
+<span class="material-symbols-outlined text-white text-3xl fill-1">play_arrow</span>
+</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="group relative rounded-xl overflow-hidden aspect-[4/5] shadow-sm">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCxYL80hJyah-S6hluFatEu18lC9Yw7tEpRfRnTmAehlievyDtRpK2NCLqSzfYfJ_Ze3qodM-kZodSGCwS966uyy-nv2FVRQ-lbtPc5TbKYxuypbB3mO7cocTWuskiW2HIBp4FW0EXaIjXwwnW21sVh1eW-YA9ZPyaO7257ndMJIAYI9Vl0isDlQzsHDJ8g8QOwNbOQNROcpqpi7KYHHGvoxoEjh-vuTAQnsfbDUz8dPuSC5M7FT4F8OSQADvHAzQgL6f9RLaM2aoc");'>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute top-2 right-2 flex flex-col items-end gap-1">
+<span class="bg-black/60 backdrop-blur-md text-white text-[10px] font-bold px-2 py-1 rounded-md">1:20</span>
+</div>
+<div class="absolute bottom-0 left-0 p-3 w-full">
+<div class="flex items-center gap-1 mb-1">
+<span class="material-symbols-outlined text-primary text-[14px]">auto_awesome</span>
+<span class="text-gray-300 text-[10px] font-bold uppercase">AI Enhanced</span>
+</div>
+<h3 class="text-white text-sm font-bold leading-snug">Tesla: Future Drive</h3>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="group relative rounded-xl overflow-hidden aspect-[4/5] shadow-sm">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDCSxeotpOpXUVdCFI8-THBF2YsNvHmVKAmYB2mE9xjqeTUExm-lQuLZgGFzUINCwUF5xxd7IihTBQXHARlzOkg7FTEfiy5YKca6ksMUkA3FLmZMTQrmwUXTPHBGHKbNetf3_afUEY29bsx7kQQKsqSoeIOZ5UsANhtdJa1GQ2ag-sV9Jq8NGEGkxsMICVvJ3jisVt0RoR2rJC1q2dYHQbqWAZxgg3_lyMRgSIQKLlBG_BhD9bVusC74lqPeIztKEqYUqsnFnB4ReI");'>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute top-2 right-2">
+<span class="bg-black/60 backdrop-blur-md text-white text-[10px] font-bold px-2 py-1 rounded-md">0:15</span>
+</div>
+<div class="absolute bottom-0 left-0 p-3 w-full">
+<h3 class="text-white text-sm font-bold leading-snug">Coca-Cola: Summer</h3>
+<p class="text-gray-300 text-[10px] line-clamp-1">Social Media Campaign</p>
+</div>
+</div>
+<!-- Item 4: Wide Card -->
+<div class="col-span-2 group relative rounded-xl overflow-hidden aspect-[21/9] shadow-sm">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuATXMNvlOuxa1Oj43mlHbfx9OcTvmjAXNXW9-VkF1-YDKOEx-xPtdbKpbwuNcpjw_j6byOqhJMyTyIt3nWT2f8n96FWehDD-IbTwS15I11we2tVK8_KskfG8Zsv8t6SzWUZHzmTH9IqZ-_AdjJ30LcpyhK1sznnfAgFKXZZEBw4gQNoVptHNh-yu37f0QHZgCKXpdI2P02dkuWxC-dcOTw06zVB1UaAh1JOZfEOeG9yJYU46c6aN26gQLd-wX34vMgr0_PkvtArCWM");'>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/10 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-4 w-full flex justify-between items-end">
+<div>
+<h3 class="text-white text-lg font-bold leading-tight">Spotify: Wrapped</h3>
+<p class="text-gray-300 text-xs mt-0.5">VFX Heavy Production</p>
+</div>
+<span class="bg-primary text-white text-[10px] font-bold px-2 py-1 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">play_circle</span> Watch
+                    </span>
+</div>
+</div>
+<!-- Item 5 -->
+<div class="group relative rounded-xl overflow-hidden aspect-square shadow-sm">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCEXqK6R2YDxE_x8YsdncOSx6Dn5umCqFQN6Aad0yo2tonPjnD8amRNJuEx9O1yaBw6w1XSb8KC3NgUCwFIuoIbjuA0Dk45T0zvXZNY2_s49wL84lc9NGkdi6-OBsYTy-94_SV4EACKYUqtOgnd1fmlR-Ka8941ITsulUX-IQjyiADMAlQJt8V02-M4Co5IVr5MrKwgRKwVR1vG-jge8PBmI2vs6LQqu7udO_EUM6_JFeI9_KXfcjJxPH0J8zR0CTODRT8WEMh6u08");'>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+<div class="absolute top-2 right-2">
+<span class="bg-black/60 backdrop-blur-md text-white text-[10px] font-bold px-2 py-1 rounded-md">2:30</span>
+</div>
+<div class="absolute bottom-0 left-0 p-3">
+<h3 class="text-white text-sm font-bold">NatGeo: Wild</h3>
+</div>
+</div>
+<!-- Item 6 -->
+<div class="group relative rounded-xl overflow-hidden aspect-square shadow-sm bg-surface-light flex items-center justify-center border-2 border-dashed border-gray-200">
+<div class="text-center p-2">
+<span class="material-symbols-outlined text-gray-400 text-3xl mb-1">add_photo_alternate</span>
+<p class="text-text-muted text-xs font-bold">View Archive</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Floating Action Button (Fixed Bottom) -->
+<div class="fixed bottom-6 left-0 w-full px-5 z-50 flex justify-center pointer-events-none">
+<a href="contact.html" class="pointer-events-auto shadow-xl shadow-primary/30 flex w-full max-w-[320px] cursor-pointer items-center justify-between rounded-2xl h-14 pl-5 pr-2 bg-primary text-white transition-transform active:scale-95 hover:bg-primary-dark">
+<span class="text-base font-bold tracking-wide">Start a Project</span>
+<div class="flex items-center justify-center bg-white/20 rounded-xl h-10 w-10 backdrop-blur-sm">
+<span class="material-symbols-outlined text-white text-[24px]">arrow_forward</span>
+</div>
+</a>
+</div>
+<!-- Gradient Fade at bottom for FAB integration -->
+<div class="fixed bottom-0 left-0 w-full h-24 bg-gradient-to-t from-background-light via-background-light/80 to-transparent pointer-events-none z-40"></div>
+</body></html>

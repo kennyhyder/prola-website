@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Get In Touch - prola.ai</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#427cf0",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display bg-background-light text-[#0d121b] transition-colors duration-200">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden max-w-md mx-auto shadow-2xl bg-white">
+<!-- Top App Bar -->
+<div class="flex items-center p-4 pb-2 justify-between sticky top-0 z-50 bg-white/80 backdrop-blur-md">
+<a href="index.html" class="text-[#0d121b] flex size-12 shrink-0 items-center justify-center rounded-full hover:bg-gray-100 transition-colors">
+<span class="material-symbols-outlined" style="font-size: 24px;">arrow_back</span>
+</a>
+<h2 class="text-[#0d121b] text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Get in Touch</h2>
+<a href="../index.html" class="text-primary text-sm font-medium hover:underline pr-2">Switch Theme</a>
+</div>
+<!-- Hero Section -->
+<div class="px-4 pt-6 pb-2 relative overflow-hidden">
+<!-- Subtle AI geometric background pattern hint -->
+<div class="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+<h1 class="text-[#0d121b] tracking-tight text-[32px] font-extrabold leading-[1.1] relative z-10">
+                Ready to <span class="text-primary">revolutionize</span> your ads?
+            </h1>
+<p class="text-slate-500 text-base font-medium leading-normal pt-3 relative z-10">
+                Combine AI speed with pro editing. Let's create something extraordinary together.
+            </p>
+</div>
+<!-- Contact Cards -->
+<div class="grid grid-cols-3 gap-3 p-4">
+<button class="flex flex-col gap-2 rounded-xl border border-primary/10 bg-primary/5 p-3 items-center justify-center hover:bg-primary/10 transition-colors group">
+<div class="text-primary bg-white p-2 rounded-full shadow-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" style="font-size: 24px;">call</span>
+</div>
+<span class="text-[#0d121b] text-xs font-bold leading-tight">Call Us</span>
+</button>
+<button class="flex flex-col gap-2 rounded-xl border border-primary/10 bg-primary/5 p-3 items-center justify-center hover:bg-primary/10 transition-colors group">
+<div class="text-primary bg-white p-2 rounded-full shadow-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" style="font-size: 24px;">mail</span>
+</div>
+<span class="text-[#0d121b] text-xs font-bold leading-tight">Email Us</span>
+</button>
+<button class="flex flex-col gap-2 rounded-xl border border-primary/10 bg-primary/5 p-3 items-center justify-center hover:bg-primary/10 transition-colors group">
+<div class="text-primary bg-white p-2 rounded-full shadow-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" style="font-size: 24px;">location_on</span>
+</div>
+<span class="text-[#0d121b] text-xs font-bold leading-tight">Visit HQ</span>
+</button>
+</div>
+<div class="h-px bg-slate-100 mx-4 mb-4"></div>
+<!-- Form Section -->
+<div class="flex flex-col gap-5 px-4 pb-8">
+<!-- Name Input -->
+<label class="flex flex-col w-full">
+<p class="text-[#0d121b] text-sm font-semibold leading-normal pb-2 ml-1">Your Name</p>
+<input class="form-input w-full rounded-xl text-[#0d121b] border border-slate-200 bg-slate-50 focus:bg-white focus:border-primary focus:ring-4 focus:ring-primary/10 h-14 placeholder:text-slate-400 px-4 text-base transition-all" placeholder="Jane Doe" type="text"/>
+</label>
+<!-- Company Input -->
+<label class="flex flex-col w-full">
+<p class="text-[#0d121b] text-sm font-semibold leading-normal pb-2 ml-1">Company</p>
+<input class="form-input w-full rounded-xl text-[#0d121b] border border-slate-200 bg-slate-50 focus:bg-white focus:border-primary focus:ring-4 focus:ring-primary/10 h-14 placeholder:text-slate-400 px-4 text-base transition-all" placeholder="Acme Productions" type="text"/>
+</label>
+<!-- Email Input -->
+<label class="flex flex-col w-full">
+<p class="text-[#0d121b] text-sm font-semibold leading-normal pb-2 ml-1">Work Email</p>
+<input class="form-input w-full rounded-xl text-[#0d121b] border border-slate-200 bg-slate-50 focus:bg-white focus:border-primary focus:ring-4 focus:ring-primary/10 h-14 placeholder:text-slate-400 px-4 text-base transition-all" placeholder="jane@company.com" type="email"/>
+</label>
+<!-- Project Type Dropdown -->
+<label class="flex flex-col w-full">
+<p class="text-[#0d121b] text-sm font-semibold leading-normal pb-2 ml-1">Project Type</p>
+<div class="relative">
+<select class="form-select w-full rounded-xl text-[#0d121b] border border-slate-200 bg-slate-50 focus:bg-white focus:border-primary focus:ring-4 focus:ring-primary/10 h-14 px-4 text-base appearance-none transition-all">
+<option>TV Commercial</option>
+<option>Social Media Ad</option>
+<option>Corporate Video</option>
+<option>Other</option>
+</select>
+</div>
+</label>
+<!-- Message Textarea -->
+<label class="flex flex-col w-full">
+<p class="text-[#0d121b] text-sm font-semibold leading-normal pb-2 ml-1">Tell us about your vision</p>
+<textarea class="form-textarea w-full rounded-xl text-[#0d121b] border border-slate-200 bg-slate-50 focus:bg-white focus:border-primary focus:ring-4 focus:ring-primary/10 min-h-[120px] placeholder:text-slate-400 p-4 text-base resize-none transition-all" placeholder="We're looking to create a high-energy 30s spot for..."></textarea>
+</label>
+<!-- Submit Button -->
+<button class="w-full mt-2 h-14 bg-primary hover:bg-blue-600 active:scale-[0.98] text-white text-lg font-bold rounded-xl shadow-lg shadow-primary/30 flex items-center justify-center gap-2 transition-all">
+                Send Message
+                <span class="material-symbols-outlined" style="font-size: 20px;">send</span>
+</button>
+</div>
+<!-- Map Section -->
+<div class="px-4 pb-8">
+<h3 class="text-[#0d121b] text-base font-bold mb-3">Visit our Studio</h3>
+<div class="relative w-full h-48 rounded-xl overflow-hidden border border-slate-200 shadow-sm">
+<img alt="Map showing agency location" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCijLRadJPh7v7QaEAL8u8guqS0GQvqiQdAxlkOnRxIEoo0qFjF8WVQ4vSpEdbE0Hk7U7E0Gf0-E6yjBVNf4k4XGrtytum26IZwETOrBuptobYo51YqZ-X1oSmDg0AnqsziWvF4IV4nxize1bok_owQdeesDAHM1m7REvBnKabX5jLojBLobGwqjdX-t54QZNhZywL56bzN1VNsA016dRLPpV7nXmR-kMYUXo-Onx2xL_aItaI5MMibzJ4lxCKbjs_TQyaZV-MPebk"/>
+<div class="absolute bottom-3 left-3 bg-white p-3 rounded-lg shadow-md max-w-[200px] border border-slate-100">
+<p class="text-xs font-bold text-gray-900">Headquarters</p>
+<p class="text-xs text-slate-500">123 Innovation Blvd, Tech District</p>
+</div>
+</div>
+</div>
+<div class="h-8"></div>
+</div>
+</body></html>

@@ -1,14 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en"><head>
-<!-- Theme initialization (prevents flash) -->
-<script>
-  if (localStorage.theme === 'light' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: light)').matches)) {
-    document.documentElement.classList.remove('dark');
-  } else {
-    document.documentElement.classList.add('dark');
-  }
-</script>
+<html class="dark" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Services - prola.ai</title>
@@ -54,10 +46,7 @@
 <span class="material-symbols-outlined text-[24px]">arrow_back</span>
 </a>
 <h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Our Capabilities</h2>
-<button id="theme-toggle" class="p-2 rounded-full bg-slate-100 dark:bg-white/10 hover:bg-slate-200 dark:hover:bg-white/20 text-slate-600 dark:text-white transition-colors" title="Toggle theme">
-<span class="material-symbols-outlined text-xl theme-icon-light hidden dark:block">light_mode</span>
-<span class="material-symbols-outlined text-xl theme-icon-dark block dark:hidden">dark_mode</span>
-</button>
+<a href="../index.html" class="text-primary text-sm font-medium hover:underline">Switch Theme</a>
 </div>
 <!-- Hero Section -->
 <div class="@container w-full">
@@ -269,17 +258,4 @@
 </div>
 </div>
 </div>
-<!-- Theme Toggle Script -->
-<script>
-  const themeToggle = document.getElementById('theme-toggle');
-  themeToggle.addEventListener('click', () => {
-    if (document.documentElement.classList.contains('dark')) {
-      document.documentElement.classList.remove('dark');
-      localStorage.theme = 'light';
-    } else {
-      document.documentElement.classList.add('dark');
-      localStorage.theme = 'dark';
-    }
-  });
-</script>
 </body></html>

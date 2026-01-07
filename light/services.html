@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Services - prola.ai</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Noto+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "background-light": "#ffffff",
+                        "background-dark": "#ffffff",
+                        "surface": "#f8f9fc",
+                        "text-main": "#0d121b",
+                        "text-sub": "#4b5563"
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.375rem", "md": "0.375rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px"},
+                    boxShadow: {
+                        "soft": "0 4px 20px -2px rgba(19, 91, 236, 0.08)",
+                        "glow": "0 0 15px rgba(19, 91, 236, 0.3)"
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        /* Custom scrollbar hiding for clean mobile look */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light text-text-main antialiased selection:bg-primary/20">
+<div class="relative mx-auto flex h-full min-h-screen w-full max-w-md flex-col bg-background-light overflow-x-hidden border-x border-gray-100 shadow-2xl">
+<!-- Sticky Header -->
+<header class="sticky top-0 z-50 flex items-center justify-between bg-white/90 px-5 py-4 backdrop-blur-md border-b border-gray-100">
+<div class="flex items-center gap-2">
+<a href="index.html" class="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-white">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+</a>
+<h2 class="text-xl font-bold tracking-tight text-text-main">prola.ai</h2>
+</div>
+<a href="../index.html" class="text-primary text-sm font-medium hover:underline">Switch Theme</a>
+</header>
+<!-- Hero Section -->
+<section class="relative px-5 pt-8 pb-6">
+<div class="mb-4 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-xs font-semibold text-primary">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+                Accepting new projects
+            </div>
+<h1 class="font-display text-4xl font-bold leading-[1.1] tracking-tight text-text-main mb-4">
+                Next-Gen <br/>
+<span class="text-primary">Video Production</span>
+</h1>
+<p class="font-body text-text-sub text-lg leading-relaxed mb-8">
+                Where artificial intelligence meets professional human artistry. High-impact commercials at 10x speed.
+            </p>
+<!-- Abstract Hero Image -->
+<div class="relative w-full overflow-hidden rounded-2xl aspect-[16/9] shadow-soft bg-gradient-to-br from-blue-50 to-indigo-50 group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAvkJS08EgMVaWN_TTdhLdbXosTB9R0RTBLnh1hsIruSNg0Ygg_I35bgZgZTu46phImExgI0YFaIqqDmnhL4eWvg74NZbrf3_uTPZU9sk8DJpMLcYS_rnm9nJ-h-UFvgXMHpXIOr2kIK-e7Z9fxoWC9CZA5LZVZNGMFGcqFYptD9BHHyNs3fYTlSQysaqSpNwjiWLniA3fJC2eR_D0z2UAWS6wgZ77yaUXXDCun6aack1ct0MxA7lXREa-n6uSeTsQQJtmlB8mJq6g");'>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+<div class="absolute bottom-4 left-4 flex items-center gap-2 text-white">
+<span class="material-symbols-outlined text-xl">play_circle</span>
+<span class="text-sm font-medium">Watch Showreel</span>
+</div>
+</div>
+</section>
+<!-- Key Services Grid -->
+<section class="px-5 py-4">
+<div class="flex items-center justify-between mb-4">
+<h2 class="text-xl font-bold">Core Services</h2>
+<span class="text-sm text-primary font-medium">View All</span>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<!-- Card 1 -->
+<div class="flex flex-col gap-3 rounded-xl bg-surface p-4 transition-all hover:bg-white hover:shadow-soft border border-transparent hover:border-primary/10">
+<div class="flex h-10 w-10 items-center justify-center rounded-lg bg-white shadow-sm text-primary">
+<span class="material-symbols-outlined">auto_fix_high</span>
+</div>
+<div>
+<h3 class="font-bold text-base leading-tight">AI Concepting</h3>
+<p class="mt-1 text-xs text-text-sub leading-normal">Data-driven scripts &amp; storyboard gen.</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="flex flex-col gap-3 rounded-xl bg-surface p-4 transition-all hover:bg-white hover:shadow-soft border border-transparent hover:border-primary/10">
+<div class="flex h-10 w-10 items-center justify-center rounded-lg bg-white shadow-sm text-primary">
+<span class="material-symbols-outlined">video_library</span>
+</div>
+<div>
+<h3 class="font-bold text-base leading-tight">Hybrid Video</h3>
+<p class="mt-1 text-xs text-text-sub leading-normal">AI generation + human refinement.</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="flex flex-col gap-3 rounded-xl bg-surface p-4 transition-all hover:bg-white hover:shadow-soft border border-transparent hover:border-primary/10">
+<div class="flex h-10 w-10 items-center justify-center rounded-lg bg-white shadow-sm text-primary">
+<span class="material-symbols-outlined">record_voice_over</span>
+</div>
+<div>
+<h3 class="font-bold text-base leading-tight">Voice Synthesis</h3>
+<p class="mt-1 text-xs text-text-sub leading-normal">Ultra-realistic AI voiceovers.</p>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="flex flex-col gap-3 rounded-xl bg-surface p-4 transition-all hover:bg-white hover:shadow-soft border border-transparent hover:border-primary/10">
+<div class="flex h-10 w-10 items-center justify-center rounded-lg bg-white shadow-sm text-primary">
+<span class="material-symbols-outlined">movie_edit</span>
+</div>
+<div>
+<h3 class="font-bold text-base leading-tight">Human Polish</h3>
+<p class="mt-1 text-xs text-text-sub leading-normal">Expert color grading &amp; cutting.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Workflow Section -->
+<section class="px-5 py-6">
+<h2 class="text-xl font-bold mb-6">Our Workflow</h2>
+<div class="relative space-y-8 pl-4 border-l-2 border-dashed border-primary/20 ml-2">
+<!-- Step 1 -->
+<div class="relative pl-6">
+<div class="absolute -left-[29px] top-0 flex h-6 w-6 items-center justify-center rounded-full bg-primary text-white text-xs font-bold ring-4 ring-white">1</div>
+<div class="flex flex-col gap-2">
+<h3 class="font-bold text-lg text-text-main">Input &amp; Strategy</h3>
+<p class="text-sm text-text-sub">We analyze your brand guidelines and campaign goals using our proprietary NLP models.</p>
+<div class="flex flex-wrap gap-2 mt-1">
+<span class="px-2 py-1 rounded bg-blue-50 text-primary text-[10px] font-bold uppercase tracking-wider">GPT-4 Scripting</span>
+<span class="px-2 py-1 rounded bg-blue-50 text-primary text-[10px] font-bold uppercase tracking-wider">Trend Analysis</span>
+</div>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative pl-6">
+<div class="absolute -left-[29px] top-0 flex h-6 w-6 items-center justify-center rounded-full bg-primary text-white text-xs font-bold ring-4 ring-white">2</div>
+<div class="flex flex-col gap-2">
+<h3 class="font-bold text-lg text-text-main">AI Generation</h3>
+<p class="text-sm text-text-sub">Initial video assets, voiceovers, and motion graphics are synthesized in minutes.</p>
+<!-- Image Strip -->
+<div class="flex gap-2 overflow-x-auto hide-scrollbar py-1">
+<div class="h-20 w-32 shrink-0 rounded-lg bg-gray-100 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAmRyVIB1rtur79-2s8TJQ1z9ZZFrJ_sT__1wiM1a-gXZYRAckmY1V_-5f_-Q6_PLhW9SrBysdp7NM608_cICFAtn64BGQWZsEycEVU9zfm8UGogcdCU9EWA1ebB2_Fy6fvdl8YTbg6eTJHl9qGdZw4KaAjhpH_8wsNOrvk1iiGBRu6Vl-4LUOvFkoNzJhXKlgyxWOVyOM8nSJK7Y0XW_uImLkpUhKWFw1lXlp_MY1ucotcK82qOUiv1xaVVjv3QzKC95lPiLLA5OQ");'></div>
+<div class="h-20 w-32 shrink-0 rounded-lg bg-gray-100 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB2woOHSvoQVXFy2n14XszWpag43jmIGzasv7jQdWNx2QZ6-ik3bj-nue2y9bqwc-iqJJM109DmzqLvh7OglYEuqSGZYI1n3UAs7y-2QOIDRSm7R5NB12SO3Bv2IxJVgsKSr0b3uR1PN-VGpGClE0Ucf5YxDkU_53YunHa1pzYexkPt7PZbYKNR_MPKR9hrMufHUA0IkA2-pNo528svqbNhk2CeUfWBJmIL2wc_Uk1lO0_x7sGi6yow-mWf5PvZcvahUm2mYtVk4D4");'></div>
+</div>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative pl-6">
+<div class="absolute -left-[29px] top-0 flex h-6 w-6 items-center justify-center rounded-full bg-primary text-white text-xs font-bold ring-4 ring-white">3</div>
+<div class="flex flex-col gap-2">
+<h3 class="font-bold text-lg text-text-main">Human Expert Finish</h3>
+<p class="text-sm text-text-sub">Our senior editors refine the output, ensuring emotional resonance and broadcast quality.</p>
+<div class="flex items-center gap-2 mt-2 bg-surface p-2 rounded-lg border border-gray-100">
+<div class="h-8 w-8 rounded-full bg-gray-300 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuARAAKhnNHDfTpJVElrHQwDUONoW_iHhhu94vDrp-J3OhlELqJ7cSdEp8wl9oifZp20wWdeRQbHBlRCwT8U_tow0xX_FePCqEccWCoqJQOqNfoDatICfmWc2CowXTUncwCFjkNf4MZeGUsiP-SOKAMdVJbwMxisIhF6Qw0QAw5d_CnXVwRel4TiTwAGKI4RdSIkcZh8rKzysQ-bcagXjUR0YHBkFeOwMeV715q3wrOgDZ4Gvok57BOi7u_IAULeFrqdP_RALYpTzkQ");'></div>
+<div class="text-xs">
+<p class="font-bold text-text-main">Verified Editor</p>
+<p class="text-text-sub">Final review passed</p>
+</div>
+<span class="material-symbols-outlined text-green-500 text-lg ml-auto">check_circle</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Us / Stats -->
+<section class="bg-primary px-5 py-8 text-white mx-4 rounded-2xl mb-24 relative overflow-hidden">
+<!-- Decorative circle -->
+<div class="absolute -top-10 -right-10 h-40 w-40 rounded-full bg-white/10 blur-2xl"></div>
+<div class="relative z-10">
+<h2 class="text-xl font-bold mb-6">Why prola.ai?</h2>
+<div class="grid grid-cols-2 gap-6">
+<div>
+<p class="text-3xl font-bold mb-1">10x</p>
+<p class="text-white/80 text-sm">Faster Production</p>
+</div>
+<div>
+<p class="text-3xl font-bold mb-1">-60%</p>
+<p class="text-white/80 text-sm">Cost Reduction</p>
+</div>
+<div>
+<p class="text-3xl font-bold mb-1">4K</p>
+<p class="text-white/80 text-sm">Output Quality</p>
+</div>
+<div>
+<p class="text-3xl font-bold mb-1">24/7</p>
+<p class="text-white/80 text-sm">AI Availability</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Sticky Bottom CTA -->
+<div class="fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-lg border-t border-gray-100 p-4 pb-8 safe-area-bottom max-w-md mx-auto">
+<div class="flex gap-3">
+<button class="flex h-12 w-12 flex-none items-center justify-center rounded-xl bg-surface text-primary border border-gray-200">
+<span class="material-symbols-outlined">chat_bubble</span>
+</button>
+<a href="contact.html" class="flex h-12 grow items-center justify-center gap-2 rounded-xl bg-primary text-white font-bold shadow-lg shadow-primary/25 hover:bg-primary/90 active:scale-[0.98] transition-all">
+<span>Create Your Ad Today</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</body></html>

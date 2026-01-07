@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>prola.ai - AI-Powered Video Production</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700;900&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1152d4",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#111722",
+                        "surface-dark": "#1A202C",
+                        "text-secondary": "#92a4c9",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.75rem",
+                        "xl": "1rem",
+                        "2xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display antialiased overflow-x-hidden selection:bg-primary selection:text-white">
+<div class="relative flex min-h-screen w-full flex-col max-w-md mx-auto shadow-2xl overflow-hidden border-x border-slate-200 dark:border-slate-800">
+<!-- TopAppBar -->
+<header class="sticky top-0 z-50 flex items-center bg-white/90 dark:bg-background-dark/90 backdrop-blur-md p-4 pb-2 justify-between border-b border-slate-200 dark:border-white/5">
+<div class="flex items-center gap-2">
+<div class="size-8 rounded-full bg-primary flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-lg">play_arrow</span>
+</div>
+<h2 class="text-slate-900 dark:text-white text-xl font-bold leading-tight tracking-[-0.015em]">prola.ai</h2>
+</div>
+<div class="flex items-center justify-end gap-3">
+<a href="../index.html" class="text-primary text-sm font-medium hover:underline">Switch Theme</a>
+<a href="contact.html" class="bg-primary hover:bg-blue-700 text-white px-3 py-1.5 rounded-full text-xs font-bold leading-normal tracking-[0.015em] shrink-0 transition-colors">
+                    Get Started
+                </a>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-1 flex flex-col gap-8 pb-10">
+<!-- Hero Section -->
+<section class="px-4 pt-4">
+<div class="relative h-[65vh] w-full rounded-2xl overflow-hidden shadow-2xl group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-105" data-alt="Futuristic film set with lighting rigs and camera equipment" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBypLyRMpAaPyg0CBbvzSYFuF6-L3TjNBgosSM-JHmCi2MbDScy5_ekEoERET-PtEWAzI1BhIWwFKa7HwhFRik42Cf7Q5pkCtOloxVq1BCzFR_tp1Fng-4p7HiBN5s26c20ElW61er2rKj5tnzljdK7zfw2_y-5-RXB3x72q2Br-RnlyU85m2E9HY7vC8-EZoEpBNZrnjwJ7EacOXLwA87I1PTqQLHNvCcfGSn_mqTSBAXA3ED3H8RBB_UEkvjEfE9YBuyrxoA3Gx4");'>
+</div>
+<!-- Gradient Overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/60 to-transparent"></div>
+<div class="absolute bottom-0 left-0 right-0 p-6 flex flex-col gap-4">
+<div class="inline-flex items-center gap-2 self-start rounded-full bg-white/10 px-3 py-1 backdrop-blur-sm border border-white/10">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+<span class="text-xs font-medium text-white">AI-Powered Production</span>
+</div>
+<h1 class="text-white text-4xl font-bold leading-[1.1] tracking-tight">
+                            Cinematic Ads. <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-primary">AI Speed.</span> <br/>
+                            Human Touch.
+                        </h1>
+<p class="text-gray-300 text-sm font-medium leading-relaxed max-w-[90%]">
+                            TV commercials and video ads crafted by experts, powered by next-gen AI for 10x faster delivery.
+                        </p>
+<div class="pt-2">
+<a href="contact.html" class="w-full flex cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-xl h-12 px-6 bg-primary hover:bg-blue-700 transition-colors text-white text-base font-bold leading-normal tracking-[0.015em] shadow-[0_0_20px_rgba(17,82,212,0.4)]">
+<span>Start Your Project</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Carousel -->
+<section class="flex flex-col gap-4">
+<div class="px-4 flex items-center justify-between">
+<h2 class="text-slate-900 dark:text-white tracking-tight text-xl font-bold leading-tight">Capabilities</h2>
+<a class="text-primary text-sm font-medium hover:text-blue-400 flex items-center gap-1" href="services.html">
+                        View All <span class="material-symbols-outlined text-sm">chevron_right</span>
+</a>
+</div>
+<div class="flex overflow-x-auto pb-4 px-4 gap-4 snap-x snap-mandatory [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden">
+<!-- Card 1 -->
+<div class="snap-start shrink-0 w-[260px] flex flex-col gap-3 rounded-xl p-3 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/5 hover:border-primary/50 transition-colors shadow-sm">
+<div class="w-full aspect-video bg-cover bg-center rounded-lg" data-alt="Professional camera on a robotic arm filming a commercial" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBc2BSzoofha-O9VlTIisubpRPJCIPC9eO0gOwFJhUsTqqdLcT_ERZWVbE_W3-_DQfpZrzCn2XiwKW3rf1L6II55uQtQ-csSpPvjqUUHxrjtRM947j4aX9upZfwgsqTj6WDst8OxzhZT5tKBbcavyEOf9Popw3_gL-j63aiTRnyVWVaj2b8KUG-TYm2_YIih5xOnTHm82Rrr5MtE-IbDLVc9qUNXXSR80PVZqEcXDRNBQEdbtmhr38F2l8LmuyKu75tYi0NckoF03I");'></div>
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-primary text-sm">movie</span>
+<p class="text-slate-900 dark:text-white text-base font-bold">TV Commercials</p>
+</div>
+<p class="text-slate-500 dark:text-text-secondary text-sm leading-normal">Broadcast quality production ready for national networks.</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="snap-start shrink-0 w-[260px] flex flex-col gap-3 rounded-xl p-3 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/5 hover:border-primary/50 transition-colors shadow-sm">
+<div class="w-full aspect-video bg-cover bg-center rounded-lg" data-alt="Neon blurred city lights suggesting viral social media content" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBTFf3bN0DCTNcSDGmoe3wIn9zQcgNW3mQHRA6PUlrmVMbWuNRHvWMRR5C-yr00Y2DGCZ_XSItfP6_dB4Ryp5N-hJ0hjoE5Ts0NtNbzxcAsTasstp5Q3SsJFtiazEJRCFmHJ5M2QA39OARmlWNOocG7Ndlkptx5jc4xJjs2rqde7ZcssX04rjCvYM9dMQ7MnFHBrJCG9YkTQ7OqWVwDMI2hD7u1LToKhZnkxghiyOLPKnotymlAe4WM3HDuijzJQ-bmB0ohIbORAQ8");'></div>
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-primary text-sm">smartphone</span>
+<p class="text-slate-900 dark:text-white text-base font-bold">Social Shorts</p>
+</div>
+<p class="text-slate-500 dark:text-text-secondary text-sm leading-normal">Viral-ready vertical videos optimized for TikTok &amp; Reels.</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="snap-start shrink-0 w-[260px] flex flex-col gap-3 rounded-xl p-3 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/5 hover:border-primary/50 transition-colors shadow-sm">
+<div class="w-full aspect-video bg-cover bg-center rounded-lg" data-alt="Abstract digital network visualization representing AI VFX" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBMzENp-4adprxu0yUwunMvZUYefU3MGR6Qvn7Xc4LbKcnVqg1sIBdG3aLzSLvKf0BdyRtplwgq997AtJaQ2vt0BuN9_ru6l-zNhEelsMOt3wrUnqU9GjQebXVmh7W5ZL_m74vLZ0MyWhGmIXSOzqM81Rg3E68Eja31zNzy3Vh2cuFM3B7wYCRgNHGKLWcvOkaER6OnxN4uavyJ5EaAxr2zPG1-XLrJNdvI3TheHiNXujdPWfD8RlnGhEs4mInYgIiilq5sVw9E-rU");'></div>
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-primary text-sm">auto_awesome</span>
+<p class="text-slate-900 dark:text-white text-base font-bold">AI VFX</p>
+</div>
+<p class="text-slate-500 dark:text-text-secondary text-sm leading-normal">Next-gen visual effects generated in minutes, not days.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Profile Section -->
+<section class="mx-4 bg-white dark:bg-gradient-to-br dark:from-[#1c2436] dark:to-background-dark rounded-2xl p-6 border border-slate-200 dark:border-white/5 shadow-sm">
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-4">
+<div class="relative">
+<div class="bg-center bg-no-repeat bg-cover rounded-xl h-20 w-20 ring-2 ring-primary/30" data-alt="Portrait of a man in professional studio lighting" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDWZFP43FqGx6xwtFh7HF8GhEP2-dmGjgtb0nZVJwbipMqA4ZaGIq5rykYpQUUxlVdAZE1AgECSFWXG7drrSBPvJYmV1jgSaELWeBP3DfpGXSEnEVk_AKUGPpzYlGmHSRwqwv_hURW-D-GOwjv_4lOz6dnm0JILuh9SzLasImy_GdEMmCFPK_xSWhlBxH7rS9bv-aAVUmhbs896qPb5dSqOF-glzh7tCZj4vbQy0ffvpasB5UAuyo4vzYLnf1e42afhSdNFDUo9k2g");'>
+</div>
+<div class="absolute -bottom-1 -right-1 bg-primary rounded-full p-1 border border-background-dark">
+<span class="material-symbols-outlined text-white text-xs block">verified</span>
+</div>
+</div>
+<div class="flex flex-col">
+<p class="text-primary text-xs font-bold uppercase tracking-wider mb-1">Founder &amp; Visionary</p>
+<h3 class="text-slate-900 dark:text-white text-xl font-bold leading-tight">Meet Jim Prola</h3>
+<p class="text-slate-500 dark:text-text-secondary text-sm mt-1">Leading the AI Video Revolution</p>
+</div>
+</div>
+<div class="relative">
+<span class="absolute top-0 left-0 text-6xl text-slate-200 dark:text-white/5 font-serif leading-none transform -translate-y-4">"</span>
+<p class="text-slate-600 dark:text-gray-300 text-sm font-normal leading-relaxed italic relative z-10 pl-4 border-l-2 border-primary">
+                            We are bridging the gap between traditional filmmaking and generative AI. It's not about replacing humans; it's about giving them superpowers to create cinematic experiences at the speed of thought.
+                        </p>
+</div>
+<a href="about.html" class="self-start text-slate-900 dark:text-white text-sm font-bold border-b border-slate-300 dark:border-white/20 pb-0.5 hover:border-primary hover:text-primary transition-colors">
+                        Read full bio
+                    </a>
+</div>
+</section>
+<!-- Social Proof / Logos -->
+<section class="py-8 border-y border-slate-200 dark:border-white/5 bg-slate-50 dark:bg-white/[0.02]">
+<p class="text-center text-slate-500 dark:text-text-secondary text-xs font-bold uppercase tracking-widest mb-6">Trusted by Innovative Brands</p>
+<div class="flex flex-wrap justify-center items-center gap-x-8 gap-y-6 px-8 opacity-60">
+<!-- Fake Logo 1 -->
+<div class="flex items-center gap-2 grayscale hover:grayscale-0 transition-all duration-300">
+<span class="material-symbols-outlined text-2xl">diamond</span>
+<span class="font-bold text-lg tracking-tighter">Luxe</span>
+</div>
+<!-- Fake Logo 2 -->
+<div class="flex items-center gap-2 grayscale hover:grayscale-0 transition-all duration-300">
+<span class="material-symbols-outlined text-2xl">bolt</span>
+<span class="font-bold text-lg tracking-tighter">ZapTech</span>
+</div>
+<!-- Fake Logo 3 -->
+<div class="flex items-center gap-2 grayscale hover:grayscale-0 transition-all duration-300">
+<span class="material-symbols-outlined text-2xl">rocket_launch</span>
+<span class="font-bold text-lg tracking-tighter">Orbit</span>
+</div>
+<!-- Fake Logo 4 -->
+<div class="flex items-center gap-2 grayscale hover:grayscale-0 transition-all duration-300">
+<span class="material-symbols-outlined text-2xl">water_drop</span>
+<span class="font-bold text-lg tracking-tighter">Pure</span>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="px-4 pb-8">
+<div class="bg-primary rounded-2xl p-8 text-center relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+<div class="relative z-10 flex flex-col items-center gap-4">
+<h2 class="text-white text-2xl font-bold">Ready to scale your video ads?</h2>
+<p class="text-blue-100 text-sm max-w-xs mx-auto">Join the new era of video production. High quality, low friction.</p>
+<a href="contact.html" class="mt-2 bg-white text-primary px-8 py-3 rounded-xl font-bold text-sm shadow-lg hover:bg-gray-100 transition-colors w-full sm:w-auto">
+                            Get Started Now
+                        </a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-100 dark:bg-[#0b101a] py-8 px-6 border-t border-slate-200 dark:border-white/5">
+<div class="flex flex-col gap-6">
+<div class="flex justify-between items-start">
+<div>
+<h2 class="text-slate-900 dark:text-white text-lg font-bold">prola.ai</h2>
+<p class="text-slate-500 dark:text-text-secondary text-xs mt-1">© 2024 Prola AI Inc.</p>
+</div>
+<div class="flex gap-4">
+<a class="text-slate-500 dark:text-text-secondary hover:text-primary" href="#"><span class="material-symbols-outlined">dataset</span></a>
+<a class="text-slate-500 dark:text-text-secondary hover:text-primary" href="#"><span class="material-symbols-outlined">photo_camera</span></a>
+<a class="text-slate-500 dark:text-text-secondary hover:text-primary" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4 text-sm">
+<div class="flex flex-col gap-2">
+<a class="text-slate-500 dark:text-text-secondary hover:text-primary transition-colors" href="portfolio.html">Works</a>
+<a class="text-slate-500 dark:text-text-secondary hover:text-primary transition-colors" href="services.html">Services</a>
+<a class="text-slate-500 dark:text-text-secondary hover:text-primary transition-colors" href="contact.html">Pricing</a>
+</div>
+<div class="flex flex-col gap-2">
+<a class="text-slate-500 dark:text-text-secondary hover:text-primary transition-colors" href="about.html">About Jim</a>
+<a class="text-slate-500 dark:text-text-secondary hover:text-primary transition-colors" href="contact.html">Contact</a>
+<a class="text-slate-500 dark:text-text-secondary hover:text-primary transition-colors" href="#">Privacy Policy</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Bottom Mobile Nav -->
+<div class="sticky bottom-4 mx-4 mb-4 z-50">
+<div class="bg-white/80 dark:bg-white/10 backdrop-blur-xl border border-slate-200 dark:border-white/10 rounded-full p-2 flex justify-around items-center shadow-2xl">
+<a href="index.html" class="p-3 text-primary flex flex-col items-center gap-1">
+<span class="material-symbols-outlined filled">home</span>
+</a>
+<a href="portfolio.html" class="p-3 text-slate-500 dark:text-text-secondary hover:text-primary flex flex-col items-center gap-1 transition-colors">
+<span class="material-symbols-outlined">movie_filter</span>
+</a>
+<a href="about.html" class="p-3 text-slate-500 dark:text-text-secondary hover:text-primary flex flex-col items-center gap-1 transition-colors">
+<span class="material-symbols-outlined">person</span>
+</a>
+<a href="contact.html" class="p-3 text-slate-500 dark:text-text-secondary hover:text-primary flex flex-col items-center gap-1 transition-colors">
+<span class="material-symbols-outlined">mail</span>
+</a>
+</div>
+</div>
+</div>
+</body></html>
