@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us & Team - prola.ai</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1152d4",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                        "card-dark": "#1a2230",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(26, 34, 48, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 15px -5px rgba(17, 82, 212, 0.3); }
+            50% { box-shadow: 0 0 25px -2px rgba(17, 82, 212, 0.6); }
+        }
+
+        .ai-glow {
+            animation: pulse-glow 3s infinite ease-in-out;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark min-h-screen text-slate-900 dark:text-white font-display overflow-x-hidden pb-24">
+<!-- Top App Bar -->
+<div class="sticky top-0 z-50 glass-panel border-b border-white/5">
+<div class="flex items-center p-4 h-16 justify-between max-w-md mx-auto w-full">
+<a href="index.html" class="text-white flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</a>
+<h2 class="text-white text-lg font-bold leading-tight tracking-tight">Meet the Minds</h2>
+<button class="text-white flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-2xl">more_vert</span>
+</button>
+</div>
+</div>
+<div class="max-w-md mx-auto w-full flex flex-col">
+<!-- Profile / Hero Section -->
+<div class="relative flex flex-col items-center pt-8 pb-6 px-6">
+<!-- Background Glow Effect -->
+<div class="absolute top-10 left-1/2 -translate-x-1/2 w-48 h-48 bg-primary/20 rounded-full blur-[60px] pointer-events-none"></div>
+<!-- Avatar -->
+<div class="relative z-10 mb-5 group">
+<div class="relative">
+<div class="w-32 h-32 rounded-full p-1 bg-gradient-to-br from-white/20 to-primary/50 ai-glow">
+<img alt="Professional headshot of Jim Prola smiling slightly" class="w-full h-full rounded-full object-cover border-4 border-background-dark" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhKHflLHWUPfSqn3HIguk1IJf5wJRTZvMXVQwoIJs_-cAtUPXVGZuvb886xpm1zID9dNkJYtrw8ygXwVNXj79JaApg12RbFuL2337PFVOO-FyoXrPuNlYUFAMysntCXMGcyPJPJ0vyndJEbxdZQzeaz_93zHW8VqC3WC5resW97fSZ-z8S7-q6K-ymf7NwO43wQEkxVlJRmII5axLmpcoOA0TsUkCRJddiLuWhaK5p2MWyj77GabIyPK36kHAvXiSEu6bZ-ZUu6y0"/>
+</div>
+<!-- Status Badge -->
+<div class="absolute bottom-1 right-1 bg-background-dark rounded-full p-1">
+<div class="bg-green-500 w-3 h-3 rounded-full border border-background-dark"></div>
+</div>
+</div>
+</div>
+<!-- Name & Title -->
+<div class="flex flex-col items-center text-center z-10 space-y-1">
+<h1 class="text-3xl font-bold tracking-tight text-white">Jim Prola</h1>
+<p class="text-primary font-medium text-sm tracking-wide uppercase">Founder & Lead Strategist</p>
+</div>
+<!-- Badges -->
+<div class="flex gap-3 mt-4 z-10">
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 border border-white/10">
+<span class="material-symbols-outlined text-primary text-[18px]">smart_toy</span>
+<span class="text-xs font-medium text-gray-300">AI Pioneer</span>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/5 border border-white/10">
+<span class="material-symbols-outlined text-primary text-[18px]">movie</span>
+<span class="text-xs font-medium text-gray-300">20y Production</span>
+</div>
+</div>
+<!-- Bio -->
+<div class="mt-6 p-4 rounded-xl bg-card-dark border border-white/5 z-10">
+<p class="text-gray-300 text-sm leading-relaxed font-body text-center">
+                    "My vision is to bridge the gap between cold AI efficiency and warm human creativity. We ensure every frame tells a story that resonates, combining data-driven insights with cinematic soul."
+                </p>
+</div>
+</div>
+<!-- Section Divider -->
+<div class="h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent my-2"></div>
+<!-- Team Section Header -->
+<div class="px-6 pt-6 pb-4 flex justify-between items-end">
+<div>
+<h3 class="text-xl font-bold text-white tracking-tight">Core Creative Team</h3>
+<p class="text-xs text-gray-400 font-body mt-1">Human expertise amplified by AI</p>
+</div>
+<button class="text-primary text-sm font-bold flex items-center gap-1 hover:text-primary/80 transition-colors">
+                View All <span class="material-symbols-outlined text-sm font-bold">arrow_forward</span>
+</button>
+</div>
+<!-- Team Grid -->
+<div class="grid grid-cols-2 gap-4 px-4 pb-6">
+<!-- Team Member 1 -->
+<div class="group relative bg-card-dark rounded-xl overflow-hidden border border-white/5 hover:border-primary/30 transition-all duration-300 shadow-lg">
+<div class="aspect-[4/5] w-full overflow-hidden relative">
+<img alt="Portrait of Sarah Jenkins looking professional" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCe06gaDQMhBVY0pqdxPuLKFVedpT5gPpEQz0LS28jpOyJRrUVIuTk66NwaaUzo4cjqcY097nL9gyXNtl3-STayspUyv0LDrXsIkheJHsnrISKZo_vi8MZ23JwK_wXMEmeQWsLJfM9pK84RYdhmWg4vqdZ0SOj4V9pZF68GwNV25OF_kTEIm5oxSwHK1fsE5RH2cCks-IhNktrLMdXF1TLtQz6iuEZS_oku1A3PmX4GjNnig5M7c7EkCLmPQojdHPsUtx01LSnioSw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-3 w-full">
+<p class="text-white font-bold text-base truncate">Sarah Jenkins</p>
+<p class="text-gray-400 text-xs font-body truncate">Lead Video Editor</p>
+</div>
+</div>
+<div class="p-3 bg-card-dark border-t border-white/5">
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded text-[10px] font-medium bg-primary/20 text-blue-200">Storytelling</span>
+<span class="px-2 py-0.5 rounded text-[10px] font-medium bg-white/5 text-gray-400">Avid</span>
+</div>
+</div>
+</div>
+<!-- Team Member 2 -->
+<div class="group relative bg-card-dark rounded-xl overflow-hidden border border-white/5 hover:border-primary/30 transition-all duration-300 shadow-lg">
+<div class="aspect-[4/5] w-full overflow-hidden relative">
+<img alt="Portrait of David Chen with artistic lighting" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCxda9oWgIdv-gdPekLFRCaO0PynlIkr48s6_uOmvv4vD2rVbKIr69bdX3WclOxH-5MMuAKh92V8wUF2Y8y0FCKMx-8pUJWHGxijKxWI2ahJLQZH7ZX2_b3vJf4J5_zFAJdXtxY1CDp4AiQUQoNSoPKPTGnC9mk5hU-I1O2vWwCf6By_x0Yu4IEkh7GT41M2bKB3SExoidCn85Ea0cTupxxmyS9gk3bBuTj2FZCFsa1aIBn0jfcl1WPYS_zuwSWtn_q4GkTltDxIw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-3 w-full">
+<p class="text-white font-bold text-base truncate">David Chen</p>
+<p class="text-gray-400 text-xs font-body truncate">AI Prompter & VFX</p>
+</div>
+</div>
+<div class="p-3 bg-card-dark border-t border-white/5">
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded text-[10px] font-medium bg-purple-500/20 text-purple-200">Generative AI</span>
+<span class="px-2 py-0.5 rounded text-[10px] font-medium bg-white/5 text-gray-400">Nuke</span>
+</div>
+</div>
+</div>
+<!-- Team Member 3 -->
+<div class="group relative bg-card-dark rounded-xl overflow-hidden border border-white/5 hover:border-primary/30 transition-all duration-300 shadow-lg">
+<div class="aspect-[4/5] w-full overflow-hidden relative">
+<img alt="Portrait of Elena Rodriguez smiling" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClGERpTLMk78x0igym51n280V49Kwy74I0H-H4oygOX8kvfvlxRo9xB0MtsFf-jzcPIia1lUpEULVHxfn-nPvyjmpsST7DoHkevztYymRmonOCfzsJWPx6j40r7Y4zEqq5jaOTSYJPsNprzLPhMf5WgyS8CTmNhR2-2YzyOwHqNS1coArBbBia5c3fcXycKp6VUyHVkb7xizTdRDj6heWGnUYdb3d6rsDhGwx875D1q7fhkSTpaQSG1yV_VnO9azWuHSkQsacXnRU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-3 w-full">
+<p class="text-white font-bold text-base truncate">Elena Rodriguez</p>
+<p class="text-gray-400 text-xs font-body truncate">Senior Colorist</p>
+</div>
+</div>
+<div class="p-3 bg-card-dark border-t border-white/5">
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded text-[10px] font-medium bg-amber-500/20 text-amber-200">Color Grading</span>
+<span class="px-2 py-0.5 rounded text-[10px] font-medium bg-white/5 text-gray-400">DaVinci</span>
+</div>
+</div>
+</div>
+<!-- Team Member 4 -->
+<div class="group relative bg-card-dark rounded-xl overflow-hidden border border-white/5 hover:border-primary/30 transition-all duration-300 shadow-lg">
+<div class="aspect-[4/5] w-full overflow-hidden relative">
+<img alt="Portrait of Marcus Thorne looking serious" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAttg0T2w3rhlDDCmjyE-YeOOcFRxC-gu8vpnAqqpcyvumW_HXGFpkL9Qvac4sFKdtupQscE3iOnpG3jKE7TgX4KzXPbFmHMwsy5NaqAu_tzwAZ869RnOjhxLsJOw5cxvUrXGsgdkxUCQ1Mg7yJRbXUSF7YvsFDsuo_4GZhtQU-Z9TlbjmfTse6dxeCodXvoPydqWqkGqwuXXgcBNMf9UePyxk8KsyT0uPgZfzIYhjm2ulj-TwZZtrfHk6z_9dFdbNqZdNzM0kBp_0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-3 w-full">
+<p class="text-white font-bold text-base truncate">Marcus Thorne</p>
+<p class="text-gray-400 text-xs font-body truncate">Sound Design</p>
+</div>
+</div>
+<div class="p-3 bg-card-dark border-t border-white/5">
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded text-[10px] font-medium bg-teal-500/20 text-teal-200">Audio Mixing</span>
+<span class="px-2 py-0.5 rounded text-[10px] font-medium bg-white/5 text-gray-400">SFX</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Stats / Credibility -->
+<div class="px-6 pb-8">
+<div class="flex gap-4 p-4 rounded-xl bg-gradient-to-r from-card-dark to-transparent border border-white/5 items-center justify-between">
+<div>
+<p class="text-white font-bold text-sm">Join the Revolution</p>
+<p class="text-gray-400 text-xs mt-1">We are hiring new talents.</p>
+</div>
+<div class="h-8 w-8 rounded-full bg-white/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-lg">chevron_right</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Fixed Bottom CTA -->
+<div class="fixed bottom-0 left-0 right-0 p-4 bg-background-dark/80 backdrop-blur-lg border-t border-white/10 z-50">
+<div class="max-w-md mx-auto w-full">
+<a href="contact.html" class="w-full bg-primary hover:bg-blue-600 text-white font-bold py-3.5 px-6 rounded-xl shadow-lg shadow-primary/20 flex items-center justify-center gap-2 transition-all active:scale-[0.98]">
+<span>Work with our Team</span>
+<span class="material-symbols-outlined text-[20px]">auto_awesome</span>
+</a>
+</div>
+</div>
+</body></html>

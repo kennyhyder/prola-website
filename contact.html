@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Get In Touch - prola.ai</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Theme Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1152d4",
+                        "primary-hover": "#0e44b3",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                        "surface-dark": "#192233",
+                        "border-dark": "#324467",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #101622;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #324467;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #4a5d85;
+        }
+
+        .form-input-transition {
+            transition: all 0.2s ease-in-out;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display antialiased selection:bg-primary selection:text-white">
+<div class="relative flex h-full min-h-screen w-full flex-col overflow-x-hidden max-w-md mx-auto shadow-2xl bg-background-light dark:bg-background-dark">
+<!-- TopAppBar -->
+<div class="sticky top-0 z-50 flex items-center bg-background-light dark:bg-background-dark/95 backdrop-blur-md p-4 pb-2 justify-between border-b border-gray-200 dark:border-white/5">
+<a href="index.html" class="text-slate-900 dark:text-white flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</a>
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] text-center">Contact Us</h2>
+<div class="size-10"></div>
+</div>
+<!-- Headline & Subtitle -->
+<div class="px-4 pt-6 pb-2">
+<h1 class="text-slate-900 dark:text-white tracking-tight text-[32px] font-bold leading-tight mb-2">Get In Touch</h1>
+<p class="text-slate-600 dark:text-gray-400 text-base font-normal leading-normal font-body">
+                Start your next video campaign with our AI-powered production team.
+            </p>
+</div>
+<!-- TextGrid: Contact Methods -->
+<div class="grid grid-cols-2 gap-3 p-4">
+<!-- Email Card -->
+<a class="group flex flex-col gap-3 rounded-xl border border-gray-200 dark:border-border-dark bg-white dark:bg-surface-dark p-4 items-start hover:border-primary/50 dark:hover:border-primary/50 transition-colors cursor-pointer shadow-sm" href="mailto:hello@prola.ai">
+<div class="text-primary rounded-lg bg-primary/10 p-2 flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">mail</span>
+</div>
+<div>
+<h2 class="text-slate-900 dark:text-white text-base font-bold leading-tight mb-1">Email Us</h2>
+<p class="text-slate-500 dark:text-gray-400 text-xs font-body">hello@prola.ai</p>
+</div>
+</a>
+<!-- Phone Card -->
+<a class="group flex flex-col gap-3 rounded-xl border border-gray-200 dark:border-border-dark bg-white dark:bg-surface-dark p-4 items-start hover:border-primary/50 dark:hover:border-primary/50 transition-colors cursor-pointer shadow-sm" href="tel:+15550123456">
+<div class="text-primary rounded-lg bg-primary/10 p-2 flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">call</span>
+</div>
+<div>
+<h2 class="text-slate-900 dark:text-white text-base font-bold leading-tight mb-1">Call Us</h2>
+<p class="text-slate-500 dark:text-gray-400 text-xs font-body">+1 (555) 012-3456</p>
+</div>
+</a>
+</div>
+<!-- ListItem: Address -->
+<div class="px-4 mb-2">
+<div class="flex items-center gap-4 bg-white dark:bg-background-dark border border-gray-200 dark:border-border-dark rounded-xl px-4 py-3 justify-between shadow-sm">
+<div class="flex items-center gap-4">
+<div class="text-primary flex items-center justify-center rounded-lg bg-primary/10 shrink-0 size-10">
+<span class="material-symbols-outlined text-[20px]">location_on</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-slate-900 dark:text-white text-sm font-bold leading-normal line-clamp-1 font-display">123 Creative Blvd</p>
+<p class="text-slate-500 dark:text-[#92a4c9] text-xs font-normal leading-normal line-clamp-1 font-body">Tech District, New York, NY</p>
+</div>
+</div>
+<div class="shrink-0 text-slate-400 dark:text-gray-500">
+<span class="material-symbols-outlined text-[20px]">arrow_forward_ios</span>
+</div>
+</div>
+</div>
+<!-- Map Snippet -->
+<div class="px-4 pb-6">
+<div class="w-full h-32 rounded-xl overflow-hidden relative shadow-md border border-gray-200 dark:border-border-dark">
+<div class="absolute inset-0 bg-surface-dark bg-[url('https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1000&auto=format&fit=crop')] bg-cover bg-center opacity-40 grayscale"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent"></div>
+<div class="absolute bottom-3 right-3 bg-primary text-white text-xs font-bold px-3 py-1.5 rounded-lg flex items-center gap-1 shadow-lg cursor-pointer hover:bg-primary-hover transition">
+<span class="material-symbols-outlined text-[14px]">map</span>
+                    View Map
+                </div>
+</div>
+</div>
+<!-- Divider -->
+<div class="h-px w-full bg-gray-200 dark:bg-white/5 mb-6"></div>
+<!-- Inquiry Form -->
+<div class="px-4 pb-8">
+<h3 class="text-slate-900 dark:text-white text-xl font-bold mb-6">Send an Inquiry</h3>
+<form action="#" class="flex flex-col gap-5 font-body">
+<!-- Name Field -->
+<div>
+<label class="text-slate-700 dark:text-gray-300 text-sm font-medium mb-2 block">Full Name</label>
+<div class="relative">
+<input class="w-full bg-white dark:bg-surface-dark border border-gray-300 dark:border-border-dark rounded-lg px-4 py-3 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-gray-500 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary form-input-transition" placeholder="e.g. Alex Chen" type="text"/>
+<span class="material-symbols-outlined absolute right-3 top-3.5 text-slate-400 dark:text-gray-500 text-[20px]">person</span>
+</div>
+</div>
+<!-- Company & Email Row -->
+<div class="flex gap-4">
+<div class="flex-1">
+<label class="text-slate-700 dark:text-gray-300 text-sm font-medium mb-2 block">Company</label>
+<input class="w-full bg-white dark:bg-surface-dark border border-gray-300 dark:border-border-dark rounded-lg px-4 py-3 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-gray-500 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary form-input-transition" placeholder="Your Company" type="text"/>
+</div>
+</div>
+<!-- Email Field -->
+<div>
+<label class="text-slate-700 dark:text-gray-300 text-sm font-medium mb-2 block">Work Email</label>
+<div class="relative">
+<input class="w-full bg-white dark:bg-surface-dark border border-gray-300 dark:border-border-dark rounded-lg px-4 py-3 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-gray-500 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary form-input-transition" placeholder="name@company.com" type="email"/>
+<span class="material-symbols-outlined absolute right-3 top-3.5 text-slate-400 dark:text-gray-500 text-[20px]">mail</span>
+</div>
+</div>
+<!-- Project Type Select -->
+<div>
+<label class="text-slate-700 dark:text-gray-300 text-sm font-medium mb-2 block">Project Type</label>
+<div class="relative">
+<select class="w-full bg-white dark:bg-surface-dark border border-gray-300 dark:border-border-dark rounded-lg px-4 py-3 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-gray-500 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary appearance-none form-input-transition cursor-pointer">
+<option disabled="" selected="" value="">Select a project type</option>
+<option value="tv">TV Commercial Production</option>
+<option value="social">Social Media Ad Campaign</option>
+<option value="ai">AI Concept Generation</option>
+<option value="other">Other Inquiry</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-3.5 text-slate-400 dark:text-gray-500 pointer-events-none text-[20px]">expand_more</span>
+</div>
+</div>
+<!-- Project Details Textarea -->
+<div>
+<label class="text-slate-700 dark:text-gray-300 text-sm font-medium mb-2 block">Project Details</label>
+<textarea class="w-full bg-white dark:bg-surface-dark border border-gray-300 dark:border-border-dark rounded-lg px-4 py-3 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-gray-500 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary form-input-transition min-h-[120px] resize-none" placeholder="Tell us about your campaign goals, target audience, and timeline..."></textarea>
+</div>
+<!-- Submit Button -->
+<button class="mt-2 w-full bg-primary hover:bg-primary-hover text-white font-display font-bold text-lg rounded-xl py-4 shadow-lg shadow-primary/20 active:scale-[0.98] transition-all flex items-center justify-center gap-2 group" type="button">
+                    Send Inquiry
+                    <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">send</span>
+</button>
+<!-- Microcopy -->
+<p class="text-center text-xs text-slate-500 dark:text-gray-500">
+<span class="material-symbols-outlined align-middle text-[14px] mr-1 text-primary">check_circle</span>
+                    Our human team reviews all AI-generated briefs within 24 hours.
+                </p>
+</form>
+</div>
+<!-- Footer / Socials -->
+<div class="mt-auto bg-slate-100 dark:bg-[#0b0f17] py-8 border-t border-gray-200 dark:border-white/5 flex flex-col items-center gap-4">
+<div class="flex items-center gap-6">
+<a class="text-slate-400 dark:text-gray-500 hover:text-primary dark:hover:text-white transition-colors" href="#">
+<svg aria-hidden="true" class="w-6 h-6 fill-current" viewbox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg>
+</a>
+<a class="text-slate-400 dark:text-gray-500 hover:text-primary dark:hover:text-white transition-colors" href="#">
+<svg aria-hidden="true" class="w-6 h-6 fill-current" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.416 4.48c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" fill-rule="evenodd"></path></svg>
+</a>
+<a class="text-slate-400 dark:text-gray-500 hover:text-primary dark:hover:text-white transition-colors" href="#">
+<svg aria-hidden="true" class="w-6 h-6 fill-current" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.445-.18-.722 2.916-1.32 3.292-3.28 3.292-3.28a.586.586 0 00-.522-.888c-.536-.005-1.066.04-1.536.135a8.508 8.508 0 012.96 5.712zm-4.431.935c-.83 3.333-2.42 5.568-3.085 6.46-1.118-2.618-2.58-4.996-3.826-6.697 1.874-1.296 3.993-1.576 3.993-1.576.438 1.102 1.956 1.487 2.918 1.813zM9.46 7.423c1.397 1.88 2.97 4.542 4.015 7.294-3.323.792-5.748.9-6.953.946-.118-.328-1.512-4.14 2.938-8.24zm-5.748 4.68c.24-1.87 1.176-3.476 2.508-4.665-2.569 3.033-2.657 5.923-2.632 6.574 1.343-.05 3.824-.18 6.586-.883-.16-.628-.276-1.127-.37-1.554-2.541.4-4.88 1.175-6.092 1.528zm.609 2.59c.77-.202 3.323-1.02 6.096-1.396.114.547.227 1.05.352 1.554-3.033 1.91-4.939 4.306-4.939 4.306a8.52 8.52 0 01-1.51-4.464zM12 20.5c-2.03 0-3.896-.708-5.378-1.895 0 0 1.914-2.493 5.438-4.62 1.037.15 2.193.303 3.256.402A8.49 8.49 0 0112 20.5zm6.577-4.22c-1.25-.13-2.625-.327-3.858-.516.59-1.03 1.76-3.564 2.379-6.396 2.05 2.23 1.99 5.862 1.48 6.912z" fill-rule="evenodd"></path></svg>
+</a>
+</div>
+<p class="text-[10px] text-slate-400 dark:text-gray-600">© 2024 Prola AI Inc.</p>
+</div>
+</div>
+</body></html>

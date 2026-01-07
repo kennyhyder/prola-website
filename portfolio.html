@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portfolio - prola.ai</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1152d4",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                        "surface": "#192233",
+                        "surface-highlight": "#232f48",
+                        "text-muted": "#92a4c9",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .glass {
+            background: rgba(16, 22, 34, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display min-h-screen flex flex-col antialiased selection:bg-primary selection:text-white">
+<!-- Sticky Header -->
+<header class="sticky top-0 z-50 w-full glass border-b border-surface-highlight/50 transition-all duration-300">
+<div class="flex items-center justify-between px-4 py-3">
+<div class="flex items-center gap-3">
+<a href="index.html" class="relative group cursor-pointer">
+<div class="bg-center bg-no-repeat bg-cover rounded-full size-10 ring-2 ring-surface-highlight transition-all group-hover:ring-primary" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDFpJzNfgEVy2pf6Si_dpatV4py8sdok4CW5RaUL4mGwehZ6-bod6ZFAOMvRVLtrfihowzH46-jkawVW_v2hVYTBj0WhNis9epRyxG8quuOmZcJhMlqEo6NxbLgwHOPgoXSk4jS2Qf5Q5Ap_8W5e_Wb5ujjx-DeuCVsWvGDf9mRhoXXvXDPNG_gZuzPVyidjs7sYfH4JiJkK3mOnLRr5dHWZKt8SXhezO9C-jrWDzPo6IP3AL8cOXBCrDjBegdQD7OKmQmt9w7hdOw");'>
+</div>
+<div class="absolute bottom-0 right-0 size-2.5 bg-green-500 rounded-full border-2 border-background-dark"></div>
+</a>
+<div class="flex flex-col">
+<h1 class="text-white text-lg font-bold leading-none tracking-tight">Jim Prola</h1>
+<span class="text-text-muted text-xs font-medium tracking-wide mt-1">AI Video Production</span>
+</div>
+</div>
+<button aria-label="Search" class="flex items-center justify-center size-10 rounded-full hover:bg-surface-highlight text-white transition-colors">
+<span class="material-symbols-outlined">search</span>
+</button>
+</div>
+<!-- Scrollable Filter Chips -->
+<div class="w-full overflow-x-auto no-scrollbar pb-3 px-4 flex gap-3 snap-x">
+<button class="snap-start shrink-0 h-9 px-5 rounded-full bg-primary text-white text-sm font-bold tracking-wide shadow-lg shadow-primary/20 transition-transform active:scale-95">
+                All Work
+            </button>
+<button class="snap-start shrink-0 h-9 px-5 rounded-full bg-surface-highlight text-text-muted hover:text-white hover:bg-surface-highlight/80 text-sm font-medium tracking-wide transition-all active:scale-95 border border-transparent hover:border-white/10">
+                Automotive
+            </button>
+<button class="snap-start shrink-0 h-9 px-5 rounded-full bg-surface-highlight text-text-muted hover:text-white hover:bg-surface-highlight/80 text-sm font-medium tracking-wide transition-all active:scale-95 border border-transparent hover:border-white/10">
+                AI Gen
+            </button>
+<button class="snap-start shrink-0 h-9 px-5 rounded-full bg-surface-highlight text-text-muted hover:text-white hover:bg-surface-highlight/80 text-sm font-medium tracking-wide transition-all active:scale-95 border border-transparent hover:border-white/10">
+                Tech
+            </button>
+<button class="snap-start shrink-0 h-9 px-5 rounded-full bg-surface-highlight text-text-muted hover:text-white hover:bg-surface-highlight/80 text-sm font-medium tracking-wide transition-all active:scale-95 border border-transparent hover:border-white/10">
+                Cinematic
+            </button>
+<button class="snap-start shrink-0 h-9 px-5 rounded-full bg-surface-highlight text-text-muted hover:text-white hover:bg-surface-highlight/80 text-sm font-medium tracking-wide transition-all active:scale-95 border border-transparent hover:border-white/10">
+                Social Shorts
+            </button>
+</div>
+</header>
+<!-- Main Portfolio Grid -->
+<main class="flex-1 w-full px-4 pt-4 pb-32">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+<!-- Featured Item (Large) -->
+<div class="group relative flex flex-col gap-3 md:col-span-2 cursor-pointer">
+<div class="relative w-full aspect-video rounded-xl overflow-hidden bg-surface-highlight shadow-2xl">
+<div class="absolute inset-0 bg-center bg-cover transition-transform duration-700 group-hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDC-uqxYiQRznfTNz1k55Yy4L-8-sIcZ5HJ164xe-luqNdkps7OJqX23CD2PGhL6NVek5jGCy-vM-haRiXQPDA_R3e6W99gBvCmmqBQtPPRKI7CItIFhyCBqgMESrQSl-HmtxGoB-xDEKQfYttwaWCyfGojBoeqqq7dtROZQny61yfcN49k4TXEYr-cpEbd_eMJLseoDMqrwnMD6xcnlk3kQI5YDDmp5rDCzde6qCi81oOfiJ1ZQnXEQS9ZbO_ZPMDtyQA0ScU6bEQ");'>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
+<!-- Play Overlay -->
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="size-16 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center border border-white/20 group-hover:scale-110 transition-transform duration-300 shadow-xl">
+<span class="material-symbols-outlined text-white fill-1" style="font-size: 32px; font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<!-- Video Duration Badge -->
+<div class="absolute top-3 right-3 bg-black/50 backdrop-blur-md px-2.5 py-1 rounded text-[11px] font-bold tracking-wider uppercase text-white border border-white/10">
+                        0:45
+                    </div>
+<!-- Content Overlay (Bottom) -->
+<div class="absolute bottom-0 left-0 w-full p-4 md:p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+<div class="flex items-center gap-2 mb-1">
+<span class="px-2 py-0.5 rounded text-[10px] font-bold uppercase bg-primary text-white tracking-widest">Featured</span>
+</div>
+<h2 class="text-white text-xl md:text-2xl font-bold leading-tight">Cyberpunk City 2077</h2>
+<p class="text-text-muted text-sm mt-1 line-clamp-1">AI Concept - Unreal Engine 5 Integration</p>
+</div>
+</div>
+</div>
+<!-- Grid Item 2 -->
+<div class="group relative flex flex-col gap-3 cursor-pointer">
+<div class="relative w-full aspect-video rounded-xl overflow-hidden bg-surface-highlight shadow-lg">
+<div class="absolute inset-0 bg-center bg-cover transition-transform duration-500 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBCALLNQAWgkaycdgyBfBeQyaXbnbLAwl160IiV_GJJK91AonMGMDmOhsWPQn2tV8PZAemDPfcJYao-mYYHSOQVgudcv-Jb_vrYo5ANCmPLUQ3S1hJXd7PVzFEoQzi6GK6d4jnTxuWn9PYEzJ7gQtR0btE5bQlyi_aMce7KjcsNPeBygIMSbi10UqFzjFeDM1fkwNVy4oonZYqX_t9-v6sZb5huf2EM-Lf1Ml-6VOeyxXXVv4vudgMPRSt7CKPFZo6xcYS3bsQCazM");'>
+</div>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all"></div>
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<div class="size-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center border border-white/30">
+<span class="material-symbols-outlined text-white" style="font-size: 24px; font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<div class="absolute top-2 right-2 bg-black/60 backdrop-blur px-1.5 py-0.5 rounded text-[10px] font-bold text-white">0:30</div>
+</div>
+<div>
+<h3 class="text-white text-base font-bold leading-tight group-hover:text-primary transition-colors">Porsche - Limitless</h3>
+<p class="text-text-muted text-xs mt-1">Automotive - Commercial</p>
+</div>
+</div>
+<!-- Grid Item 3 -->
+<div class="group relative flex flex-col gap-3 cursor-pointer">
+<div class="relative w-full aspect-video rounded-xl overflow-hidden bg-surface-highlight shadow-lg">
+<div class="absolute inset-0 bg-center bg-cover transition-transform duration-500 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBzQOW4tb2VBWUmrjfRuMZfF3ddGCJ355h3-oKwLREO64B7Ec_ba5y9Bx8xmeFX8JsVefndMrngjHgmnoGXo2I26RGzvvsq6iHjm8GSMZ8SxZEgLKn6pA3lX4wwlYTAnL5YBo_iFXsfsqTPllqAMlJxph_5x9JAg3Dkjj8G02OuUOeQZYBcnuE9O4pIswFsDxN6WHtVLDp227_TLX5DWfy_cVW7q6ZhG8aE3OK0_xi11yhK3YgeCSvLf0jcskP54lzB0u8vsecHBEg");'>
+</div>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all"></div>
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<div class="size-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center border border-white/30">
+<span class="material-symbols-outlined text-white" style="font-size: 24px; font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<div class="absolute top-2 right-2 bg-black/60 backdrop-blur px-1.5 py-0.5 rounded text-[10px] font-bold text-white">0:15</div>
+</div>
+<div>
+<h3 class="text-white text-base font-bold leading-tight group-hover:text-primary transition-colors">Morning Brew</h3>
+<p class="text-text-muted text-xs mt-1">Lifestyle - Social Short</p>
+</div>
+</div>
+<!-- Grid Item 4 -->
+<div class="group relative flex flex-col gap-3 cursor-pointer">
+<div class="relative w-full aspect-video rounded-xl overflow-hidden bg-surface-highlight shadow-lg">
+<div class="absolute inset-0 bg-center bg-cover transition-transform duration-500 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDNa_l-0q0ktDe30x6cOn2MaweaOjPQCUHReAnbRDNr2s6mA9kaVIFVnplvLpSR1PJUNSHXSMTapG0N8nShkHnZS2TrUi0a6wqmOxwiQ7eg6imWrkvCXjzUCKtT6S-c63RvSMy4-h7duH0kIdhaH92HhmwcbsjnQARTB1CL_zDsTJMP1Z-piuUQ7ityhgRnv8fcAa19YMk7p3uvAAdQw1D359qcJ8_E88Znzxq5_gH1bKv9O2dPllKQhLECU7_hgjR4tz1uPfezpFU");'>
+</div>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all"></div>
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<div class="size-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center border border-white/30">
+<span class="material-symbols-outlined text-white" style="font-size: 24px; font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<div class="absolute top-2 right-2 bg-black/60 backdrop-blur px-1.5 py-0.5 rounded text-[10px] font-bold text-white">1:20</div>
+</div>
+<div>
+<h3 class="text-white text-base font-bold leading-tight group-hover:text-primary transition-colors">AI Synergy</h3>
+<p class="text-text-muted text-xs mt-1">Tech - Corporate</p>
+</div>
+</div>
+<!-- Grid Item 5 -->
+<div class="group relative flex flex-col gap-3 cursor-pointer">
+<div class="relative w-full aspect-video rounded-xl overflow-hidden bg-surface-highlight shadow-lg">
+<div class="absolute inset-0 bg-center bg-cover transition-transform duration-500 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAuSNLuuYqpVeCmMK9v4f1nFQbHh8gcWpjnhmwAbIzzOAZiJdH_U0cgZw5PYeY7lh10tbAt2LeKNnzsddwgbsML_PvXYDUufYi0vMVpr7x3_bh0bOPgLPN_yOtndcdZ8Na_ZESmihQdlKJ63JwqMaNMnoddTMxtDiUGcqeeQUXLvkXhZwbkkGC-8mifSRlwduLk5sFBJ1EC6Ofh-4I7ezygXpDw3mZ8NtTlWLW865doYWYnaGdrwV6Nj2pZjDlaeNM9stcWuM1J_54");'>
+</div>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all"></div>
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<div class="size-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center border border-white/30">
+<span class="material-symbols-outlined text-white" style="font-size: 24px; font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<div class="absolute top-2 right-2 bg-black/60 backdrop-blur px-1.5 py-0.5 rounded text-[10px] font-bold text-white">2:45</div>
+</div>
+<div>
+<h3 class="text-white text-base font-bold leading-tight group-hover:text-primary transition-colors">Flow State</h3>
+<p class="text-text-muted text-xs mt-1">Visual Art - Music Video</p>
+</div>
+</div>
+<!-- Grid Item 6 -->
+<div class="group relative flex flex-col gap-3 cursor-pointer">
+<div class="relative w-full aspect-video rounded-xl overflow-hidden bg-surface-highlight shadow-lg">
+<div class="absolute inset-0 bg-center bg-cover transition-transform duration-500 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDl6r3S6OjeiMHrKJZLMhjcvx5uIKqhWqPBgUXXaVAV2wX2htvQmkbnSFL0dYXJpvgkL-fX_we4gcntWiAfozQaeUizA-tTgtNoULU9g0IM-PpipZYZTXm0Qp3wI7UKYMa4WqBZ15Q7BJNG-Kiiy9fi8fXNemshbjDeIG_fIqikAYKDP8DA3FVAkWZLkAmfYaklG6Q0BaPH6SsNeQHlCpOVIxCkURWBQJe03_-S06pu3uqMSrkj3ZTXQDF0JzLPEb5k6F0pwpjwR3g");'>
+</div>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all"></div>
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<div class="size-12 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center border border-white/30">
+<span class="material-symbols-outlined text-white" style="font-size: 24px; font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<div class="absolute top-2 right-2 bg-black/60 backdrop-blur px-1.5 py-0.5 rounded text-[10px] font-bold text-white">0:20</div>
+</div>
+<div>
+<h3 class="text-white text-base font-bold leading-tight group-hover:text-primary transition-colors">Nike - Run Fast</h3>
+<p class="text-text-muted text-xs mt-1">Fashion - Commercial</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Floating Action Button Area -->
+<div class="fixed bottom-20 left-0 right-0 z-30 flex justify-center pointer-events-none">
+<a href="contact.html" class="pointer-events-auto flex items-center gap-2 bg-primary hover:bg-blue-600 text-white rounded-full h-12 px-6 shadow-[0_8px_30px_rgb(17,82,212,0.4)] transition-all active:scale-95 group">
+<span class="material-symbols-outlined group-hover:rotate-90 transition-transform">add</span>
+<span class="text-sm font-bold tracking-wide">Start a Project</span>
+</a>
+</div>
+<!-- Bottom Navigation -->
+<nav class="fixed bottom-0 w-full bg-surface border-t border-surface-highlight z-40 pb-safe">
+<div class="flex justify-between items-end px-6 h-16 pb-3">
+<a class="flex flex-1 flex-col items-center gap-1 group" href="index.html">
+<span class="material-symbols-outlined text-text-muted group-hover:text-white transition-colors" style="font-size: 24px;">home</span>
+<span class="text-[10px] font-medium text-text-muted group-hover:text-white tracking-wide">Home</span>
+</a>
+<a class="flex flex-1 flex-col items-center gap-1 group" href="portfolio.html">
+<div class="relative">
+<span class="material-symbols-outlined text-primary drop-shadow-[0_0_8px_rgba(17,82,212,0.6)]" style="font-size: 24px; font-variation-settings: 'FILL' 1;">movie</span>
+<span class="absolute -top-1 -right-1 flex size-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full size-2.5 bg-primary"></span>
+</span>
+</div>
+<span class="text-[10px] font-medium text-white tracking-wide">Portfolio</span>
+</a>
+<a class="flex flex-1 flex-col items-center gap-1 group" href="contact.html">
+<span class="material-symbols-outlined text-text-muted group-hover:text-white transition-colors" style="font-size: 24px;">mail</span>
+<span class="text-[10px] font-medium text-text-muted group-hover:text-white tracking-wide">Contact</span>
+</a>
+<a class="flex flex-1 flex-col items-center gap-1 group" href="about.html">
+<span class="material-symbols-outlined text-text-muted group-hover:text-white transition-colors" style="font-size: 24px;">person</span>
+<span class="text-[10px] font-medium text-text-muted group-hover:text-white tracking-wide">Profile</span>
+</a>
+</div>
+</nav>
+<!-- Safe area padding helper for iOS home indicator -->
+<div class="h-[env(safe-area-inset-bottom)] bg-surface w-full fixed bottom-0 z-50"></div>
+</body></html>
