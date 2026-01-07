@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 
-<html class="dark" lang="en"><head>
+<html lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Portfolio - prola.ai</title>
+<!-- Theme initialization (prevents flash) -->
+<script>
+  if (localStorage.theme === 'light' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: light)').matches)) {
+    document.documentElement.classList.remove('dark');
+  } else {
+    document.documentElement.classList.add('dark');
+  }
+</script>
 <!-- Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
@@ -53,21 +61,22 @@
   </head>
 <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display min-h-screen flex flex-col antialiased selection:bg-primary selection:text-white">
 <!-- Sticky Header -->
-<header class="sticky top-0 z-50 w-full glass border-b border-surface-highlight/50 transition-all duration-300">
+<header class="sticky top-0 z-50 w-full bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-slate-200 dark:border-surface-highlight/50 transition-all duration-300">
 <div class="flex items-center justify-between px-4 py-3">
 <div class="flex items-center gap-3">
 <a href="index.html" class="relative group cursor-pointer">
-<div class="bg-center bg-no-repeat bg-cover rounded-full size-10 ring-2 ring-surface-highlight transition-all group-hover:ring-primary" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDFpJzNfgEVy2pf6Si_dpatV4py8sdok4CW5RaUL4mGwehZ6-bod6ZFAOMvRVLtrfihowzH46-jkawVW_v2hVYTBj0WhNis9epRyxG8quuOmZcJhMlqEo6NxbLgwHOPgoXSk4jS2Qf5Q5Ap_8W5e_Wb5ujjx-DeuCVsWvGDf9mRhoXXvXDPNG_gZuzPVyidjs7sYfH4JiJkK3mOnLRr5dHWZKt8SXhezO9C-jrWDzPo6IP3AL8cOXBCrDjBegdQD7OKmQmt9w7hdOw");'>
+<div class="bg-center bg-no-repeat bg-cover rounded-full size-10 ring-2 ring-slate-200 dark:ring-surface-highlight transition-all group-hover:ring-primary" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDFpJzNfgEVy2pf6Si_dpatV4py8sdok4CW5RaUL4mGwehZ6-bod6ZFAOMvRVLtrfihowzH46-jkawVW_v2hVYTBj0WhNis9epRyxG8quuOmZcJhMlqEo6NxbLgwHOPgoXSk4jS2Qf5Q5Ap_8W5e_Wb5ujjx-DeuCVsWvGDf9mRhoXXvXDPNG_gZuzPVyidjs7sYfH4JiJkK3mOnLRr5dHWZKt8SXhezO9C-jrWDzPo6IP3AL8cOXBCrDjBegdQD7OKmQmt9w7hdOw");'>
 </div>
-<div class="absolute bottom-0 right-0 size-2.5 bg-green-500 rounded-full border-2 border-background-dark"></div>
+<div class="absolute bottom-0 right-0 size-2.5 bg-green-500 rounded-full border-2 border-white dark:border-background-dark"></div>
 </a>
 <div class="flex flex-col">
-<h1 class="text-white text-lg font-bold leading-none tracking-tight">Jim Prola</h1>
-<span class="text-text-muted text-xs font-medium tracking-wide mt-1">AI Video Production</span>
+<h1 class="text-slate-900 dark:text-white text-lg font-bold leading-none tracking-tight">Jim Prola</h1>
+<span class="text-slate-500 dark:text-text-muted text-xs font-medium tracking-wide mt-1">AI Video Production</span>
 </div>
 </div>
-<button aria-label="Search" class="flex items-center justify-center size-10 rounded-full hover:bg-surface-highlight text-white transition-colors">
-<span class="material-symbols-outlined">search</span>
+<button id="theme-toggle" class="p-2 rounded-full bg-slate-100 dark:bg-white/10 hover:bg-slate-200 dark:hover:bg-white/20 text-slate-600 dark:text-white transition-colors" title="Toggle theme">
+<span class="material-symbols-outlined text-xl theme-icon-light hidden dark:block">light_mode</span>
+<span class="material-symbols-outlined text-xl theme-icon-dark block dark:hidden">dark_mode</span>
 </button>
 </div>
 <!-- Scrollable Filter Chips -->
@@ -248,5 +257,18 @@
 </div>
 </nav>
 <!-- Safe area padding helper for iOS home indicator -->
-<div class="h-[env(safe-area-inset-bottom)] bg-surface w-full fixed bottom-0 z-50"></div>
+<div class="h-[env(safe-area-inset-bottom)] bg-white dark:bg-surface w-full fixed bottom-0 z-50"></div>
+<!-- Theme Toggle Script -->
+<script>
+  const themeToggle = document.getElementById('theme-toggle');
+  themeToggle.addEventListener('click', () => {
+    if (document.documentElement.classList.contains('dark')) {
+      document.documentElement.classList.remove('dark');
+      localStorage.theme = 'light';
+    } else {
+      document.documentElement.classList.add('dark');
+      localStorage.theme = 'dark';
+    }
+  });
+</script>
 </body></html>
